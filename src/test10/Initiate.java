@@ -92,6 +92,7 @@ public class Initiate
 				scanner.nextLine();
 				groupbr ="@"+scanner.nextLine();
 				scanner.close();
+				System.out.println("Working . ..");
 
 				try
 				{
