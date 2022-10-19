@@ -1,5 +1,7 @@
 package test10;
 
+import java.net.MalformedURLException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -8,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Fourth extends Initiate
 {
 
-	public static void main(String[] args) throws InterruptedException
+	public static void main(String[] args) throws InterruptedException, MalformedURLException
 	{
 
 		// System Property for Chrome Driver
@@ -49,6 +51,5 @@ public class Fourth extends Initiate
 		Thread.sleep(1000);
 		driver.quit();
 	}
-
 }
 
