@@ -394,10 +394,11 @@ public class Calculator extends Initiate
 		Thread.sleep(3000);
 		WebElement five = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/authPass"));
 		five.sendKeys("12345");
-		Thread.sleep(3000);
+		Thread.sleep(1000);
 		WebElement six = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/btnLogin"));
 		six.click();
 		Thread.sleep(500);
+		System.out.println("Initiating web version to throw a broadcast");
 		Fourth.main(null);
 		Thread.sleep(10000);
 		WebElement seven = driver
