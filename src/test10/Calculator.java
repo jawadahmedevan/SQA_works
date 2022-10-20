@@ -400,6 +400,7 @@ public class Calculator extends Initiate
 		Thread.sleep(500);
 		System.out.println("Initiating web version to throw a broadcast");
 		Fourth.main(null);
+		System.out.println("Back to the mobile app");
 		Thread.sleep(10000);
 		WebElement seven = driver
 				.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Group Broadcast\"]"));
