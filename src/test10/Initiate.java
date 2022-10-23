@@ -40,9 +40,7 @@ public class Initiate
 				catch (Exception e)
 				{
 					System.out.println("Chat test failed");
-				}
-				
-				
+				}			
 			}
 			if (num == 3)
 			{
@@ -93,7 +91,6 @@ public class Initiate
 				groupbr ="@"+scanner.nextLine();
 				scanner.close();
 				System.out.println("Working . ..");
-
 				try
 				{
 				    Calculator.mybroadcasttest();

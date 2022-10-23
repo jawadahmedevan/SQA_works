@@ -27,7 +27,6 @@ public class Fourth extends Initiate
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scrollBy(0, 5000)");
 
-		// Click on the Search button
 		driver.findElement(By.name("app_username")).click();
 		driver.findElement(By.name("app_username")).sendKeys("100");
 		driver.findElement(By.name("app_password")).click();
