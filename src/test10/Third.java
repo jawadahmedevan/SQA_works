@@ -34,21 +34,21 @@ public class Third extends Calculator
 		driver.findElement(By.name("app_password")).sendKeys("12345");
 		driver.findElement(By.cssSelector(".btn")).click();
 		driver.findElement(By.linkText("Groups")).click();
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.xpath("//div[3]/button")).click();
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".customSelectInputFieldDefault")).click();
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".customSelectDropdownItem:nth-child(2)")).click();
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".instructionTextAreaBackground")).click();
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".instructionTextAreaBackground")).sendKeys(Float.toString(hello));
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".submitBtn")).click();
-		Thread.sleep(800);
+		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".modalDashboardOkBtn")).click();
-		Thread.sleep(1000);
+		Thread.sleep(900);
 		driver.quit();
 	}
 
