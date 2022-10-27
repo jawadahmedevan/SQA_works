@@ -11,7 +11,7 @@ public class Initiate
 		System.out.println("Welcome to SSF Test Automation Lab");
 		Thread.sleep(500);
 		System.out.println("What Type of testing you want to do? \n " + "1. Login Script \n " + "2. Chat Script \n "
-				+ "3. Group Creation Script \n " + "4. Bottom navigation and drawer Check (not ready yet) \n "
+				+ "3. Group Creation and complete group test Script \n " + "4. Bottom navigation and drawer Check (not ready yet) \n "
 				+ "5. Instant Broadcast Test \n " + "6. SANITY TEST \n " + "7. My broadcast test \n " + "8. Dummy data insertion for testing \n");
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the number ");
@@ -44,7 +44,7 @@ public class Initiate
 			}
 			if (num == 3)
 			{
-				System.out.println("Initiating group creation Test");
+				System.out.println("Initiating complete group Test");
 				Thread.sleep(200);
 				try
 				{
@@ -52,7 +52,7 @@ public class Initiate
 				} 
 				catch (Exception e)
 				{
-					System.out.println("Group creation test failed");
+					System.out.println("Complete group test failed");
 				}
 			}
 			if (num == 5)
