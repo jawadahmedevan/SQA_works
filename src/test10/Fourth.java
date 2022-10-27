@@ -9,21 +9,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Fourth extends Initiate
 {
-
 	public static void main(String[] args) throws InterruptedException, MalformedURLException
 	{
-
-		// System Property for Chrome Driver
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-
-		// Instantiate a ChromeDriver class.
 		WebDriver driver = new ChromeDriver();
-
-		// Launch Website
 		driver.navigate().to("https://ssfdemo.innovatorslab.net/app/login");
-
-		// Maximize the browser
-		// Scroll down the webpage by 5000 pixels
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scrollBy(0, 5000)");
 
