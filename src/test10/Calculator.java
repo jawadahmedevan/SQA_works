@@ -13,7 +13,7 @@ public class Calculator extends Initiate
 {
 	protected static float hello = ThreadLocalRandom.current().nextInt(0, 1000);
 	
-	static void sanitytest() throws MalformedURLException, InterruptedException 
+    static void sanitytest() throws MalformedURLException, InterruptedException 
 	{
 		DesiredCapabilities dc = new DesiredCapabilities();
 
