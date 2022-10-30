@@ -13,21 +13,15 @@ public class Third extends Calculator
 	public static void main(String[] args) throws InterruptedException, MalformedURLException
 	{
 
-		// System Property for Chrome Driver
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 
-		// Instantiate a ChromeDriver class.
 		WebDriver driver = new ChromeDriver();
 
-		// Launch Website
 		driver.navigate().to("https://ssfdemo.innovatorslab.net/app/login");
 
-		// Maximize the browser
-		// Scroll down the webpage by 5000 pixels
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scrollBy(0, 5000)");
 
-		// Click on the Search button
 		driver.findElement(By.name("app_username")).click();
 		driver.findElement(By.name("app_username")).sendKeys("100");
 		driver.findElement(By.name("app_password")).click();
