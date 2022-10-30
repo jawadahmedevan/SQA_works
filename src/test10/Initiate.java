@@ -116,7 +116,7 @@ public class Initiate
 			}
 			if (num == 9) 
 			{
-				System.out.println("Initiating  Password change test");
+				System.out.println("Initiating Password change test");
 				Thread.sleep(200);
 				try
 				{

@@ -637,7 +637,7 @@ public class Calculator extends Initiate
 		Thread.sleep(1000);
 		WebElement eleven = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/btnNext"));
 		eleven.click();
-		Thread.sleep(2000);
+		Thread.sleep(2500);
 		WebElement twelve = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/edtNewPassword"));
 		twelve.sendKeys("12345");
 		Thread.sleep(500);
