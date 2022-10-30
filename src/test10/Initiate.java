@@ -120,7 +120,7 @@ public class Initiate
 				Thread.sleep(200);
 				try
 				{
-				    Calculator.dummydatainsertion();
+				    Calculator.passchange();
 				}
 				catch (Exception e)
 				{

@@ -600,4 +600,62 @@ public class Calculator extends Initiate
 		Thread.sleep(1500);
 		driver.quit();
 	}
+	static void passchange() throws MalformedURLException, InterruptedException
+	{
+		DesiredCapabilities dc = new DesiredCapabilities();
+
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "db08637f");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+		dc.setCapability("appPackage", "com.dsinnovators.ssfcommunication.demo");
+		dc.setCapability("appActivity", "com.dsinnovators.ssfcommunication.ui.start.StartActivity");
+		dc.setCapability("noReset", true);
+		dc.setCapability("automationName", "UiAutomator2");
+
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");
+
+		AppiumDriver driver = new AppiumDriver(url, dc);
+		Thread.sleep(3000);
+		WebElement five = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/authPass"));
+		five.sendKeys("12345");
+		Thread.sleep(3000);
+		WebElement six = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/btnLogin"));
+		six.click();
+		Thread.sleep(2500);
+		WebElement seven = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Open navigation drawer\"]"));
+		seven.click();
+		Thread.sleep(500);
+		WebElement eight = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/placeholder3"));
+		eight.click();
+		Thread.sleep(500);
+		WebElement nine = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/changePass"));
+		nine.click();
+		Thread.sleep(500);
+		WebElement ten = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/edtPassword"));
+		ten.sendKeys("12345");
+		Thread.sleep(1000);
+		WebElement eleven = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/btnNext"));
+		eleven.click();
+		Thread.sleep(2000);
+		WebElement twelve = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/edtNewPassword"));
+		twelve.sendKeys("12345");
+		Thread.sleep(500);
+		WebElement thirteen = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.EditText"));
+		thirteen.sendKeys("12345");
+		Thread.sleep(400);
+		WebElement fourteen = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/btnPassChange"));
+		fourteen.click();
+		Thread.sleep(2500);
+		System.out.println("Password change done, New password is: 12345 . Going back to homepage");
+		Thread.sleep(500);
+		WebElement fifteen = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]"));
+		fifteen.click();
+		Thread.sleep(2000);
+		System.out.println("Test Passed");
+		Thread.sleep(700);
+		System.out.println("Exiting Driver now.");
+		Thread.sleep(1500);
+		driver.quit();
+	}
 }
