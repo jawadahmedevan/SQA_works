@@ -45,5 +45,4 @@ public class Third extends Calculator
 		Thread.sleep(900);
 		driver.quit();
 	}
-
 }
