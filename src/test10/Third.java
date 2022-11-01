@@ -9,8 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Third extends Calculator
 {
-
-	public static void main(String[] args) throws InterruptedException, MalformedURLException
+    public static void main(String[] args) throws InterruptedException, MalformedURLException
 	{
 
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
@@ -18,7 +17,6 @@ public class Third extends Calculator
 		WebDriver driver = new ChromeDriver();
 
 		driver.navigate().to("https://ssfdemo.innovatorslab.net/app/login");
-
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("scrollBy(0, 5000)");
 
