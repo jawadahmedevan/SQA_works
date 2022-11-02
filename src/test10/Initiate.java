@@ -8,6 +8,7 @@ public class Initiate
 	protected static String groupbr;
 	public static void main(String[] args) throws MalformedURLException, InterruptedException 
 	{
+		int num = 0;
 		System.out.println("Welcome to SSF Test Automation Lab");
 		Thread.sleep(500);
 		System.out.println("What Type of testing you want to do? \n " + "1. Login Script \n " + "2. Chat Script \n "
@@ -18,7 +19,7 @@ public class Initiate
 		System.out.println("Enter the number ");
 		try 
 		{
-			int num = scanner.nextInt();
+			num = scanner.nextInt();
 			if (num == 1) 
 			{
 				System.out.println("Initiating login Test");
@@ -131,6 +132,16 @@ public class Initiate
 		catch (Exception e)
 		{
 			System.out.println("Only number please");
+			System.out.println("\n");
+			Thread.sleep(1500);
+			main(null);
+		}
+		if (num>9 || num<0)
+		{
+			System.out.println("Enter number according to the menu");
+			System.out.println("\n");
+			Thread.sleep(1500);
+			main(null);
 		}
 	}
 }
