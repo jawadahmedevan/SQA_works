@@ -430,6 +430,7 @@ public class Calculator extends Initiate
 		six.click();
 		Thread.sleep(500);
 		Third.main(null);
+		System.out.println("Back to the mobile app");
 		Thread.sleep(10000);
 		WebElement seven = driver
 				.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Group Broadcast\"]"));
@@ -596,7 +597,7 @@ public class Calculator extends Initiate
 		Thread.sleep(1500);
 		System.out.println("Dummy data inserted from lipsum.com");
 		Thread.sleep(1500);
-		System.out.println("Exiting Driver now; Good Bye");
+		System.out.println("Exiting Driver now.");
 		Thread.sleep(1500);
 		driver.quit();
 	}
