@@ -141,7 +141,6 @@ public class Initiate
 			System.out.println("Enter number according to the menu");
 			System.out.println("\n");
 			Thread.sleep(1500);
-			main(null);
 		}
 	}
 }
