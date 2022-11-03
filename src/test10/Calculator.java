@@ -186,10 +186,10 @@ public class Calculator extends Initiate
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[1]/android.view.ViewGroup/androidx.viewpager.widget.ViewPager/android.widget.FrameLayout/android.view.ViewGroup/androidx.recyclerview.widget.RecyclerView/android.view.ViewGroup[1]"));
 		fift.click();
 		Thread.sleep(500);
-		System.out.println("Sending a plain text");
+		System.out.println("Type Something to send as a plain text message");
 		Scanner sc=new Scanner(System.in);
 		String hello=sc.nextLine();
-		sc.close();
+		//sc.close();
 		WebElement sixt = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/inputField"));
 		sixt.click();
 		Thread.sleep(1000);
@@ -203,10 +203,12 @@ public class Calculator extends Initiate
 		Thread.sleep(800);
 		System.out.println("Sending plain text successful");
 		Thread.sleep(800);
-		System.out.println("Sending a link with preview");
+		System.out.println("Provide a link below to send to the receiver");
+		String hello1=sc.nextLine();
+		sc.close();
 		sixt.click();
 		Thread.sleep(500);
-		sixt.sendKeys("https://youtu.be/u9BQhXf4yQc");
+		sixt.sendKeys(hello1);
 		Thread.sleep(4000);
 		sevent.click();
 		Thread.sleep(800);
