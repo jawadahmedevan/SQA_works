@@ -8,6 +8,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.Scanner;
 
 public class Calculator extends Initiate
 {
@@ -186,10 +187,15 @@ public class Calculator extends Initiate
 		fift.click();
 		Thread.sleep(500);
 		System.out.println("Sending a plain text");
+		Scanner sc=new Scanner(System.in);
+		String hello=sc.nextLine();
+		sc.close();
 		WebElement sixt = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/inputField"));
 		sixt.click();
 		Thread.sleep(1000);
-		sixt.sendKeys("Hello-1");
+		System.out.println("Passing the value in the app");
+		Thread.sleep(400);
+		sixt.sendKeys(hello);
 		Thread.sleep(1500);
 		WebElement sevent = driver.findElement(By.xpath(
 				"/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.ImageButton"));
