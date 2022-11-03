@@ -11,7 +11,6 @@ public class Third extends Calculator
 {     
     public static void main(String[] args) throws InterruptedException, MalformedURLException
 	{
-
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
 
 		WebDriver driver = new ChromeDriver();
@@ -41,6 +40,6 @@ public class Third extends Calculator
 		Thread.sleep(700);
 		driver.findElement(By.cssSelector(".modalDashboardOkBtn")).click();
 		Thread.sleep(900);
-		driver.quit();
+		driver.close();
 	}
 }
