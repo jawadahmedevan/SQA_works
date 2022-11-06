@@ -189,7 +189,6 @@ public class Calculator extends Initiate
 		System.out.println("Type Something to send as a plain text message");
 		Scanner sc=new Scanner(System.in);
 		String hello=sc.nextLine();
-		//sc.close();
 		WebElement sixt = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/inputField"));
 		sixt.click();
 		Thread.sleep(1000);
