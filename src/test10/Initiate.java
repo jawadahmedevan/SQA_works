@@ -43,7 +43,7 @@ public class Initiate
 				{
 					System.out.println("Chat test failed");
 				}			
-			}
+			}	
 			if (num == 3)
 			{
 				System.out.println("Initiating complete group Test");
@@ -56,6 +56,17 @@ public class Initiate
 				{
 					System.out.println("Complete group test failed");
 				}
+			}
+			if (num == 4) 
+			{
+				try 
+				{
+					Calculator.navtest();
+				} 
+				catch (Exception e)
+				{
+					System.out.println("Bottom navigation and drawer Check");
+				}			
 			}
 			if (num == 5)
 			{
@@ -138,7 +149,7 @@ public class Initiate
 		}
 		if (num>9 || num<0)
 		{
-			System.out.println("Enter number according to the menu");
+			System.out.println("En ter number according to the menu");
 			System.out.println("\n");
 			Thread.sleep(1500);
 			main(null);
