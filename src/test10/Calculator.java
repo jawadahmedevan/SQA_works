@@ -151,6 +151,45 @@ public class Calculator extends Initiate
 		Thread.sleep(1500);
 		driver.quit();
 	}
+	static void navtest() throws MalformedURLException, InterruptedException 
+	{
+		DesiredCapabilities dc = new DesiredCapabilities();
+
+		dc.setCapability(MobileCapabilityType.AUTOMATION_NAME, "Appium");
+		dc.setCapability(MobileCapabilityType.DEVICE_NAME, "db08637f");
+		dc.setCapability(MobileCapabilityType.PLATFORM_NAME, "Android");
+		dc.setCapability(MobileCapabilityType.PLATFORM_VERSION, "11");
+		dc.setCapability("appPackage", "com.dsinnovators.ssfcommunication.demo");
+		dc.setCapability("appActivity", "com.dsinnovators.ssfcommunication.ui.start.StartActivity");
+		dc.setCapability("noReset", true);
+		dc.setCapability("automationName", "UiAutomator2");
+
+		URL url = new URL("http://127.0.0.1:4723/wd/hub");
+
+		AppiumDriver driver = new AppiumDriver(url, dc);
+		Thread.sleep(3000);
+		WebElement five = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/authPass"));
+		five.sendKeys("12345");
+		Thread.sleep(3000);
+		WebElement six = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/btnLogin"));
+		six.click();
+		Thread.sleep(2000);
+		System.out.println("Checking bottom navigation buttons");
+		WebElement one = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"All Duties\"]/android.widget.FrameLayout/android.widget.ImageView"));
+		one.click();
+		Thread.sleep(200);
+		WebElement two = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Instant Broadcast\"]"));
+		two.click();
+		Thread.sleep(200);
+		WebElement two = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Instant Broadcast\"]"));
+		two.click();
+		Thread.sleep(200);
+		System.out.println("Test Passed");
+		Thread.sleep(1500);
+		System.out.println("Exiting Driver now; Good Bye");
+		Thread.sleep(1500);
+		driver.quit();
+	}
 
 	static void chattest() throws MalformedURLException, InterruptedException
 	{
