@@ -187,8 +187,13 @@ public class Calculator extends Initiate
 		WebElement four = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Chat\"]/android.widget.FrameLayout/android.widget.ImageView"));
 		four.click();
 		Thread.sleep(200);
+		System.out.println("Checking left navigation drawer");
+		Thread.sleep(200);
 		WebElement fivee = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Open navigation drawer\"]"));
 		fivee.click();
+		Thread.sleep(200);
+		WebElement sixe = driver.findElement(By.xpath("//android.widget.FrameLayout[@content-desc=\"Chat\"]"));
+		sixe.click();
 		Thread.sleep(200);
 		System.out.println("Test Passed");
 		Thread.sleep(1500);
