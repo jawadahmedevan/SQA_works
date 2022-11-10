@@ -65,7 +65,7 @@ public class Initiate
 				} 
 				catch (Exception e)
 				{
-					System.out.println("Bottom navigation and drawer Check");
+					System.out.println("Bottom navigation and drawer Check failed");
 				}			
 			}
 			if (num == 5)
@@ -144,14 +144,14 @@ public class Initiate
 		{
 			System.out.println("Only number please");
 			System.out.println("\n");
-			Thread.sleep(1500);
+			Thread.sleep(700);
 			main(null);
 		}
-		if (num>9 || num<0)
+		if (num>9 | num<0)
 		{
-			System.out.println("En ter number according to the menu");
+			System.out.println("Enter number according to the menu");
 			System.out.println("\n");
-			Thread.sleep(1500);
+			Thread.sleep(700);
 			main(null);
 		}
 	}
