@@ -698,7 +698,7 @@ public class Calculator extends Initiate
 		Thread.sleep(2500);
 		WebElement twelve = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/edtNewPassword"));
 		twelve.sendKeys("12345");
-		Thread.sleep(500);
+		Thread.sleep(550);
 		WebElement thirteen = driver.findElement(By.xpath("/hierarchy/android.widget.FrameLayout/android.widget.LinearLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/android.widget.FrameLayout/androidx.drawerlayout.widget.DrawerLayout/android.view.ViewGroup/android.widget.FrameLayout/android.widget.FrameLayout/android.view.ViewGroup/android.widget.FrameLayout[2]/android.widget.EditText"));
 		thirteen.sendKeys("12345");
 		Thread.sleep(400);
