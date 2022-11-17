@@ -144,14 +144,14 @@ public class Initiate
 		{
 			System.out.println("Only number please");
 			System.out.println("\n");
-			Thread.sleep(700);
+			Thread.sleep(650);
 			main(null);
 		}
 		if (num>9 | num<0)
 		{
 			System.out.println("Enter number according to the menu");
 			System.out.println("\n");
-			Thread.sleep(700);
+			Thread.sleep(650);
 			main(null);
 		}
 	}
