@@ -509,7 +509,6 @@ public class Calculator extends Initiate
 			Thread.sleep(3000);
 			driver.quit();
 		}
-
 	}
 	static void mybroadcasttest() throws MalformedURLException, InterruptedException 
 	{
