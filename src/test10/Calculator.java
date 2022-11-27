@@ -75,7 +75,7 @@ public class Calculator extends Initiate
 		Thread.sleep(500);
 		WebElement sixt = driver.findElement(By.id("com.dsinnovators.ssfcommunication.demo:id/inputField"));
 		sixt.click();
-		Thread.sleep(1000);
+		Thread.sleep(990);
 		Thread.sleep(100);
 		sixt.sendKeys("Hello-1");
 		Thread.sleep(600);
