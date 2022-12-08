@@ -705,12 +705,12 @@ public class Calculator extends Initiate
 		fourteen.click();
 		Thread.sleep(2500);
 		System.out.println("Password change done, New password is: 12345 . Going back to homepage");
-		Thread.sleep(500);
+		Thread.sleep(550);
 		WebElement fifteen = driver.findElement(By.xpath("//android.widget.ImageButton[@content-desc=\"Navigate up\"]"));
 		fifteen.click();
 		Thread.sleep(2000);
 		System.out.println("Test Passed");
-		Thread.sleep(700);
+		Thread.sleep(600);
 		System.out.println("Exiting Driver now.");
 		Thread.sleep(1500);
 		driver.quit();
