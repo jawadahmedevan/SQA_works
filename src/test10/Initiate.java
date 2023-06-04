@@ -8,18 +8,18 @@ public class Initiate
 	protected static String groupbr;
 	public static void main(String[] args) throws MalformedURLException, InterruptedException 
 	{
-		int num = 0;
+
 		System.out.println("Welcome to SSF Test Automation Lab");
 		Thread.sleep(500);
 		System.out.println("What Type of testing you want to do? \n " + "1. Login Script \n " + "2. Chat Script \n "
 				+ "3. Group Creation and complete group test Script \n " + "4. Bottom navigation and drawer Check \n "
 				+ "5. Instant Broadcast Test \n " + "6. SANITY TEST \n " + "7. My broadcast test \n " + "8. Dummy data insertion for testing \n" 
-				+ " 9. Password Change test");
+				+ " 9. Password Change test \n" + " 10. Dummy data insertion for vvip \n" + "11. Chat Script for vvip");
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the number ");
-		try 
-		{
-			num = scanner.nextInt();
+		//try 
+		//{
+			int num = scanner.nextInt();
 			if (num == 1) 
 			{
 				System.out.println("Initiating login Test");
@@ -72,14 +72,14 @@ public class Initiate
 			{
 				System.out.println("Initiating Instant Broadcast Test");
 				Thread.sleep(200);
-				try 
-				{
+				//try 
+				//{
 					Calculator.broadcasttest();
-				} 
-				catch (Exception e)
-				{
+				//} 
+				//catch (Exception e)
+				//{
 					System.out.println("Instant broadcast test failed");
-				}
+				//}
 			}
 			if (num == 6) 
 			{
@@ -117,14 +117,14 @@ public class Initiate
 			{
 				System.out.println("Initiating  Dummy data insertion");
 				Thread.sleep(200);
-				try
-				{
+				//try
+				//{
 				    Calculator.dummydatainsertion();
-				}
-				catch (Exception e)
-				{
+				//}
+				//catch (Exception e)
+				//{
 				    System.out.println("Dummy data insertion failed");
-				}
+				//}
 			}
 			if (num == 9) 
 			{
@@ -139,15 +139,30 @@ public class Initiate
 				    System.out.println("Password change test failed");
 				}
 			}
-		} 
-		catch (Exception e)
-		{
-			System.out.println("Only number please");
-			System.out.println("\n");
-			Thread.sleep(650);
-			main(null);
-		}
-		if (num>9 | num<0)
+			if (num == 10) 
+			{
+				System.out.println("Initiating  Dummy data insertion for vvip");
+				Thread.sleep(200);
+				Calculator.dummydatainsertionvvip();
+				//try
+				//{
+				//}
+				//catch (Exception e)
+				//{
+				    
+				//}
+			}
+			if (num == 11) 
+			{
+				    System.out.println("Initiating vvip chat test");
+					Calculator.chattestvvip();	
+			}	
+		//} 
+		//catch (Exception e)
+		//{
+		//}
+			
+		if (num>11 | num<0)
 		{
 			System.out.println("Enter number according to the menu");
 			System.out.println("\n");
