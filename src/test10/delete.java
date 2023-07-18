@@ -5,14 +5,17 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 public class delete extends Calculator
 {     
     public static void main(String[] args) throws InterruptedException, MalformedURLException
     {
 		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
-
-		WebDriver driver = new ChromeDriver();
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		ChromeDriver driver = new ChromeDriver(options);
+		//WebDriver driver = new ChromeDriver();
 
 		driver.navigate().to("https://ssfdemo.innovatorslab.net/app/login");
 		JavascriptExecutor js = (JavascriptExecutor) driver;

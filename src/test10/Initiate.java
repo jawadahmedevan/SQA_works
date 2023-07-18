@@ -14,7 +14,7 @@ public class Initiate
 		System.out.println("What Type of testing you want to do? \n " + "1. Login Script \n " + "2. Chat Script \n "
 				+ "3. Group Creation and complete group test Script \n " + "4. Bottom navigation and drawer Check \n "
 				+ "5. Instant Broadcast Test \n " + "6. SANITY TEST \n " + "7. My broadcast test \n " + "8. Dummy data insertion for testing \n" 
-				+ " 9. Password Change test \n" + " 10. Dummy data insertion for vvip \n" + "11. Chat Script for vvip");
+				+ " 9. Password Change test \n" + " 10. Dummy data insertion for vvip from agent app \n" + "11. Chat Script for vvip \n" + "12. Dummy data insertion for vvip from vvip app \n" + "13. Chat Script for vvip from vvip app");
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Enter the number ");
 		//try 
@@ -156,6 +156,16 @@ public class Initiate
 			{
 				    System.out.println("Initiating vvip chat test");
 					Calculator.chattestvvip();	
+			}	
+			if (num == 12) 
+			{
+				    System.out.println("Initiating  Dummy data insertion for vvip from vvip app");
+					Calculator.dummydatainsertionvvipfromvvip();	
+			}	
+			if (num == 13) 
+			{
+				    System.out.println("Initiating vvip chat test from vvip app");
+					Calculator.chattestvvipfromvvip();	
 			}	
 		//} 
 		//catch (Exception e)
